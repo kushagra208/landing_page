@@ -1,0 +1,57 @@
+.container{
+    width:100%;
+    
+}
+.title{
+    font-size: 60px;
+    color:rgb(255, 183, 0);    
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family:'Amatic SC';
+    font-weight: 600;
+}
+.slideshow {
+    width:1200px;
+    margin:0 auto;
+    overflow:hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.slide {
+    width:2400px;
+    position:relative;
+    animation:slide 15s ease-in-out infinite;
+}
+
+.slide section {
+    width:300px;
+    height:300px;
+    float:left;
+}
+
+.slide section:nth-child(1) {background-image: url(https://thebelgianwaffle.co/wp-content/uploads/2019/07/Artboard-11-300x300.jpg);}
+.slide section:nth-child(2) {background-image: url(https://thebelgianwaffle.co/wp-content/uploads/2019/07/Artboard-14-300x300.jpg);}
+.slide section:nth-child(3) {background-image: url(https://thebelgianwaffle.co/wp-content/uploads/2019/07/Artboard-12-300x300.jpg);}
+.slide section:nth-child(4) {background-image: url(https://thebelgianwaffle.co/wp-content/uploads/2019/07/Artboard-13-300x300.jpg);}
+.slide section:nth-child(5) {background-image: url(https://thebelgianwaffle.co/wp-content/uploads/2019/07/Artboard-15-300x300.jpg);}
+.slide section:nth-child(6) {background-image: url(https://thebelgianwaffle.co/wp-content/uploads/2019/07/Artboard-5-300x300.jpg);}
+.slide section:nth-child(7) {background-image: url(https://thebelgianwaffle.co/wp-content/uploads/2019/07/Artboard-6-300x300.jpg);}
+.slide section:nth-child(8) {background-image: url(https://thebelgianwaffle.co/wp-content/uploads/2019/07/Artboard-7-300x300.jpg);}
+@keyframes slide {
+    0% {left:0;}
+    12.5% {left:-300px;}
+    25% {left:-600px;}
+    37.5% {left:-900px;}
+    50% {left:-1200px;}
+    62.5% {left:0px;}
+
+}
+
+@media screen and (max-width:1200px) {
+    .slideshow{
+        width:100%;
+        overflow: hidden;
+    }
+}

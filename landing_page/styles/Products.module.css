@@ -1,0 +1,22 @@
+.container{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height:100%;
+    background-image: url(https://thebelgianwaffle.co/wp-content/uploads/2021/12/Website-bg.jpg?id=19457) !important;
+    
+}
+.image{
+    width: 100%;
+    height:100%;
+}
+.title{
+    font-size: 60px;
+    color:rgb(31, 191, 255);    
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family:'Amatic SC';
+    font-weight: 600;
+
+}

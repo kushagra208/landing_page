@@ -1,0 +1,57 @@
+.container{
+    width: 100vw;
+    background-image: url(https://thebelgianwaffle.co/wp-content/uploads/2018/03/bg-1.png?id=1104) !important;
+    padding-right: 12% !important;
+    padding-bottom: 50px !important;
+    padding-left: 12% !important;
+    background-size:contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    padding: 30px;
+}
+.title{
+    font-size: 60px;
+    color:rgb(31, 191, 255);    
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family:'Amatic SC';
+    font-weight: 600;
+    padding: 30px;
+}
+.wrap{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.image{
+    height: 300px;
+    width: 300px;
+}
+.button{
+    margin-top: 50px;
+    cursor:pointer;
+    padding: 10px;
+    color: white;
+    background-color: #442816;
+    border-color: transparent;
+    border:none;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom,rgba(255,255,255,.2) 0,rgba(255,255,255,.01) 100%);
+}
+
+
+@media screen and (max-width:600px) {
+    .content{
+        flex-direction: column;
+    }
+    
+}
