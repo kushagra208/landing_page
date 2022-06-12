@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import Content from './components/Content'
-import Counter from './components/Counter'
-import Products from './components/Products'
-import Speciality from './components/Speciality'
-import VideoPlayer from './components/VideoPlayer'
-import Parallax from './components/Parallax'
+import Content from '../components/Content'
+import Counter from '../components/Counter'
+import Products from '../components/Products'
+import Speciality from '../components/Speciality'
+import VideoPlayer from '../components/VideoPlayer'
+import Parallax from '../components/Parallax'
 export default function Home() {
 
   const urls =[
