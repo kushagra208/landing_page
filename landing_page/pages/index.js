@@ -4,7 +4,6 @@ import Counter from '../components/Counter'
 import Products from '../components/Products'
 import Speciality from '../components/Speciality'
 import VideoPlayer from '../components/VideoPlayer'
-import styles from '../styles/Home.module.css'
 import Parallax from '../components/Parallax'
 export default function Home() {
 
@@ -15,9 +14,10 @@ export default function Home() {
   ]
   
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Create Next App</title>
+        <meta name='viewport' content='width-device-width' />
       </Head>
       <VideoPlayer />
       <Content />
