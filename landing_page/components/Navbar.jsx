@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import styles from '../styles/Navbar.module.css';
 import {GiHamburgerMenu} from 'react-icons/gi';
+import Link from 'next/link';
 const Navbar = () => {
 
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   return (
     <nav className={styles.container}>
-      <a href='/'>Belgian Waffle</a>
+      <Link href='/'>Belgian Waffle</Link>
       <button className={styles.hamburger}
       onClick = {() => {
         setIsNavExpanded(!isNavExpanded)
@@ -18,28 +19,28 @@ const Navbar = () => {
         
       <ul className={isNavExpanded ? styles.listexpanded : styles.list }>
         <li className = {styles.listItem}>
-          <a href = '/' target="_blank" >Home</a>
+          <Link href = '/' target="_blank" >Home</Link>
         </li>
         <li className = {styles.listItem}>
-          <a href = '/products/about-us' target="_blank">About Us</a>
+          <Link href = '/products/about-us' target="_blank">About Us</Link>
         </li>
         <li className = {styles.listItem}>
-          <a href = '/products/our-products' target="_blank">Our Products</a>
+          <Link href = '/products/our-products' target="_blank">Our Products</Link>
         </li>
         <li className = {styles.listItem}>
-          <a href = '/products/gallery' target="_blank">Gallery</a>
+          <Link href = '/products/gallery' target="_blank">Gallery</Link>
         </li>
         <li className = {styles.listItem}>
-          <a href = '/products/franchise' target="_blank" >Franchise</a>
+          <Link href = '/products/franchise' target="_blank" >Franchise</Link>
         </li>
         <li className = {styles.listItem}>
-          <a href = '/products/store-locator' target="_blank" >Store Locator</a>
+          <Link href = '/products/store-locator' target="_blank" >Store Locator</Link>
         </li>
         <li className = {styles.listItem}>
-          <a href = '/products/events-and-catering' target="_blank" >Events & Catering</a>
+          <Link href = '/products/events-and-catering' target="_blank" >Events & Catering</Link>
         </li>
         <li className = {styles.listItem}>
-          <a href = '/products/contact' target="_blank" >Contact Us</a>
+          <Link href = '/products/contact' target="_blank" >Contact Us</Link>
         </li>
       </ul>
 
